@@ -1,0 +1,26 @@
+@use "./functions" as u;
+
+.portfolio,
+.contact-us {
+  padding-top: u.rem(35);
+  padding-bottom: u.rem(35);
+}
+
+.special-heading {
+  width: fit-content;
+  font-size: u.rem(36);
+  position: relative;
+  padding: u.rem(8) 0;
+
+  span {
+    color: var(--gray-color);
+  }
+}
+
+.normal-text {
+  font-weight: normal;
+}
+
+.bold-text {
+  font-weight: bold;
+}

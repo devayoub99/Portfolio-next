@@ -1,0 +1,68 @@
+@use "./mixins" as u;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --light-gray-color: hsl(0, 0%, 79%);
+  --gray-color: hsl(201, 19%, 33%);
+  --short-duration: 0.3s;
+  --mid-duration: 0.5s;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include u.breakpoint(small) {
+    width: map-get(u.$breakpoint-sizes, small) - 2.25em;
+  }
+
+  @include u.breakpoint(medium) {
+    width: map-get(u.$breakpoint-sizes, medium) - 3em;
+  }
+
+  @include u.breakpoint(large) {
+    width: map-get(u.$breakpoint-sizes, large) - 2em;
+  }
+
+  @include u.breakpoint(xlarge) {
+    width: map-get(u.$breakpoint-sizes, xlarge) - 3.75em;
+  }
+}
