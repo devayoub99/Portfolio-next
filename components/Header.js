@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Links from "./page-navbar";
+import Navbar from "./Navbar";
 
-export default function PageHeader() {
+export default function Header() {
   return (
     <header className="page-header">
       <nav className="container">
@@ -17,8 +17,8 @@ export default function PageHeader() {
             <span>ayoub jasim</span>
           </a>
         </h2>
-        <Links className="mobile-links" />
-        <Links className="links" />
+        <Navbar className="mobile-links" />
+        <Navbar className="links" />
       </nav>
     </header>
   );

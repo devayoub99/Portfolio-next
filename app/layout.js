@@ -1,7 +1,12 @@
-import { Geist, Geist_Mono } from "next/font/google";
-// import "./globals.css";
+import { Roboto } from "next/font/google";
 import "@/css/main.css";
-import PageHeader from "@/components/page-header";
+import Header from "@/components/Header";
+
+const roboto = Roboto({
+  variable: "--font-roboto",
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "700", "800", "900"],
+});
 
 export const metadata = {
   title: "Ayoub - Portfolio website",
@@ -11,8 +16,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={``}>
-        <PageHeader />
+      <body className={`${roboto.variable}`}>
+        <Header />
         {children}
       </body>
     </html>

@@ -33,7 +33,11 @@ export default function Skills() {
           whileInView="to"
           viewport={{ once: true }}
         >
-          <m.div className="image" variants={fadeInVariants} custom={0}>
+          <m.div
+            className="developer-image"
+            variants={fadeInVariants}
+            custom={0}
+          >
             <Image src={developerImage} alt="Developer" />
           </m.div>
           <div className="text">
@@ -41,20 +45,16 @@ export default function Skills() {
               Ayoub Jasim
             </m.h3>
             <m.p className="description" variants={fadeInVariants} custom={2}>
-              A passionate, self-learning developer who specializes in
-              <span className="bold-text"> Frontend development</span>. User
-              experience, pixel perfect design, and writing clean, readable,
-              highly performant code matters to me. I began my journey in
-              <span className="bold-text"> 2021</span>, and since then, I've
-              continued to grow and evolve as a developer, taking on new
-              challenges and learning the latest technologies along the way.
-              Now,
-              <span className="bold-text"> I have +3 years experience</span>,
-              I'm building cutting-edge web applications using modern
-              technologies such as
+              I'm a passionate, self-taught{" "}
+              <span className="bold-text">Full-stack web developer</span> with a
+              strong focus on writing clean, readable, and high-performance
+              code. Since beginning my journey in{" "}
+              <span className="bold-text">2021</span>, I've continuously grown
+              and evolved—embracing new challenges and staying up-to-date with
+              the latest technologies. I specialize in building modern,
+              cutting-edge web applications using tools like
               <span className="bold-text">
-                {" "}
-                React JS, Tailwindcss, and much more
+                Next.js, React.js, Tailwind CSS, Express.js, and more
               </span>
               .
             </m.p>
@@ -68,7 +68,7 @@ export default function Skills() {
           variants={fadeInVariants}
           custom={3}
         >
-          Hard <span className="colored">Skills</span>
+          My <span className="colored">Skills</span>
         </m.h2>
         <m.div
           className="skills-container"
@@ -77,12 +77,16 @@ export default function Skills() {
           viewport={{ once: true }}
         >
           {skills.map((skill, index) => (
-            <Skill
-              key={skill.id}
-              {...skill}
-              variants={fadeInSkillVariants}
-              custom={index + 4}
-            />
+            // <Skill
+            //   key={skill.id}
+            //   {...skill}
+            //   variants={fadeInSkillVariants}
+            //   custom={index + 4}
+            // />
+            <div key={skill.id} className="skill">
+              <Image src={skill.image} alt={skill.language} className="image" />
+              {skill.language}
+            </div>
           ))}
         </m.div>
       </div>

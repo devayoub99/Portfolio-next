@@ -7,7 +7,7 @@ export default function Landing() {
       <div className="container">
         <div className="text">
           <p>Hi ✋, I'm a</p>
-          <h2>Frontend developer</h2>
+          <h2>Software Developer</h2>
           <p>Welcome to my portfolio website</p>
         </div>
         <div className="image">

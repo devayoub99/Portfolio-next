@@ -1,7 +1,5 @@
 import { motion as m } from "framer-motion";
 
-
-
 export default function Skill({ language, progress, variants, custom }) {
   const filledSequres = Array.from(
     { length: progress },

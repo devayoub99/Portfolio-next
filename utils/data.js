@@ -3,7 +3,21 @@ import skillsIcon from "@/assets/skills.svg";
 import portfolioIcon from "@/assets/portfolio.svg";
 import resumeIcon from "@/assets/resume.svg";
 import contactIcon from "@/assets/contact.svg";
-// import resumeFile from "@/assets/resume.pdf";
+
+import htmlImage from "@/assets/skills/HTML.svg";
+import cssImage from "@/assets/skills/CSS.svg";
+import sassImage from "@/assets/skills/Sass.svg";
+import bootstrapImage from "@/assets/skills/Bootstrap.svg";
+import gitImage from "@/assets/skills/Git.svg";
+import gitHubImage from "@/assets/skills/GitHub.svg";
+import javaScriptImage from "@/assets/skills/JavaScript.svg";
+import typeScriptImage from "@/assets/skills/TypeScript.svg";
+import tailwindCSSImage from "@/assets/skills/TailwindCSS.svg";
+import reactJSImage from "@/assets/skills/React.svg";
+import nextJSImage from "@/assets/skills/NextJS.svg";
+import expressJSImage from "@/assets/skills/ExpressJS.svg";
+import mySQLImage from "@/assets/skills/MySQL.svg";
+import mongoDBImage from "@/assets/skills/MongoDB.svg";
 
 import youtubeProjectImg from "@/assets/youtube.webp";
 import portfolioProjectImg from "@/assets/new.webp";
@@ -43,7 +57,7 @@ const links = [
     id: 5,
     title: "Resume",
     icon: resumeIcon,
-    linkTo: "",
+    linkTo: "/Ayoub_Jasim_Software_developer.pdf",
   },
 ];
 
@@ -51,42 +65,72 @@ const skills = [
   {
     id: 1,
     language: "HTML",
-    progress: 4,
+    image: htmlImage,
   },
   {
     id: 2,
     language: "CSS",
-    progress: 4,
+    image: cssImage,
   },
   {
     id: 3,
     language: "JavaScript",
-    progress: 4,
+    image: javaScriptImage,
   },
   {
     id: 4,
-    language: "SCSS",
-    progress: 4,
+    language: "TypeScript",
+    image: typeScriptImage,
   },
   {
     id: 5,
-    language: "Bootstrap",
-    progress: 3,
+    language: "SASS",
+    image: sassImage,
   },
   {
     id: 6,
-    language: "Git & GitHub",
-    progress: 3,
+    language: "Bootstrap",
+    image: bootstrapImage,
   },
   {
     id: 7,
-    language: "TailwindCSS",
-    progress: 4,
+    language: "Git",
+    image: gitImage,
   },
   {
     id: 8,
-    language: "React JS",
-    progress: 4,
+    language: "GitHub",
+    image: gitHubImage,
+  },
+  {
+    id: 9,
+    language: "TailwindCSS",
+    image: tailwindCSSImage,
+  },
+  {
+    id: 10,
+    language: "React.js",
+    image: reactJSImage,
+  },
+  {
+    id: 11,
+    language: "Next.js",
+    image: nextJSImage,
+  },
+  {
+    id: 12,
+    language: "Express.js",
+    image: expressJSImage,
+  },
+  {
+    id: 13,
+    language: "MySQL",
+    image: mySQLImage,
+  },
+  {
+    id: 14,
+    language: "MongoDB",
+    image: mongoDBImage,
   },
 ];
 

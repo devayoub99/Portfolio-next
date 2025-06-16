@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { links } from "../utils/data";
 
-export default function PageNavbar({ className }) {
+export default function Navbar({ className }) {
   const isMobile = className === "mobile-links";
 
   return (
@@ -12,6 +12,7 @@ export default function PageNavbar({ className }) {
             <a
               href={link.linkTo}
               target={link.title === "Resume" ? "_blank" : undefined}
+              download={link.title === "Resume"}
             >
               <Image src={link.icon} alt={link.title || "Home"} />
             </a>
@@ -22,6 +23,7 @@ export default function PageNavbar({ className }) {
               <a
                 href={link.linkTo}
                 target={link.title === "Resume" ? "_blank" : undefined}
+                download={link.title === "Resume"}
               >
                 {link.title}
               </a>

@@ -1,7 +1,7 @@
 @use "../utils" as u;
 
 .skills {
-  .image {
+  .developer-image {
     @include u.flex(center, center);
     background-image: linear-gradient(
       to right,
@@ -42,7 +42,7 @@
   .skills-container {
     width: 84%;
     margin: u.rem(40) auto;
-    display: flex;
+    @include u.flex(center, center);
     flex-wrap: wrap;
     gap: u.rem(40) u.rem(50);
   }
@@ -50,7 +50,19 @@
   .skill {
     @include u.flex(center, center);
     flex-direction: column;
-    flex: u.rem(160) 1 1;
+    // flex: u.rem(160) 1 1;
+    row-gap: u.rem(5);
+    user-select: none;
+    .image {
+      width: 40px;
+      opacity: 0.8;
+      transition: var(--short-duration);
+
+      &:hover {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+    }
   }
 
   .language {
