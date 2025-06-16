@@ -1,3 +1,4 @@
+import Image from "next/image";
 import githubIcon from "@/assets/github.svg";
 import websiteIcon from "@/assets/website.svg";
 
@@ -6,7 +7,7 @@ export default function ProjectLinkIcon({ icon, url }) {
 
   return (
     <a href={url} target="_blank">
-      <img src={theIcon.src} alt={icon} className="icon" />
+      <Image src={theIcon} alt={icon} className="icon" />
     </a>
   );
 }

@@ -1,6 +1,7 @@
 import { motion as m } from "framer-motion";
 
 import ProjectLinkIcon from "./ProjectLinkIcon";
+import Image from "next/image";
 
 export default function Project(props) {
   return (
@@ -10,7 +11,7 @@ export default function Project(props) {
       custom={props.custom}
     >
       <a href={props.liveUrl} target="_blank" className="image">
-        <img src={props.imgUrl.src} alt={`Project ${props.id}`} />
+        <Image src={props.imgUrl} alt={`Project ${props.id}`} />
       </a>
       <div className="text">
         <h3>

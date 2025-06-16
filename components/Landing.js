@@ -1,4 +1,5 @@
 import landingImg from "@/assets/landing.svg";
+import Image from "next/image";
 
 export default function Landing() {
   return (
@@ -10,7 +11,7 @@ export default function Landing() {
           <p>Welcome to my portfolio website</p>
         </div>
         <div className="image">
-          <img src={landingImg.src} alt="Landing" />
+          <Image src={landingImg} alt="Landing" priority />
         </div>
       </div>
     </section>

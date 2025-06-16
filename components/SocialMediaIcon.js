@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { motion as m } from "framer-motion";
 
 export default function SocialMediaIcon(props) {
@@ -7,9 +8,9 @@ export default function SocialMediaIcon(props) {
       target="_blank"
       className="social-media-icon"
       variants={props.variants}
-    custom = {props.custom}
+      custom={props.custom}
     >
-      <img src={props.img.src} alt={props.title} />
+      <Image src={props.img} alt={props.title} />
     </m.a>
   );
 }

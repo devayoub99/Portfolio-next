@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion as m } from "framer-motion";
 
 import developerImage from "@/assets/developer.webp";
@@ -33,7 +34,7 @@ export default function Skills() {
           viewport={{ once: true }}
         >
           <m.div className="image" variants={fadeInVariants} custom={0}>
-            <img src={developerImage.src} alt="Developer" />
+            <Image src={developerImage} alt="Developer" />
           </m.div>
           <div className="text">
             <m.h3 className="name" variants={fadeInVariants} custom={1}>

@@ -4,7 +4,6 @@ import portfolioIcon from "@/assets/portfolio.svg";
 import resumeIcon from "@/assets/resume.svg";
 import contactIcon from "@/assets/contact.svg";
 // import resumeFile from "@/assets/resume.pdf";
-import resumeFile from "@/assets/resume.svg";
 
 import youtubeProjectImg from "@/assets/youtube.webp";
 import portfolioProjectImg from "@/assets/new.webp";
@@ -44,7 +43,7 @@ const links = [
     id: 5,
     title: "Resume",
     icon: resumeIcon,
-    linkTo: resumeFile,
+    linkTo: "",
   },
 ];
 

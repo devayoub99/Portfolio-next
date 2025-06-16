@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { links } from "../utils/data";
 
 export default function PageNavbar({ className }) {
@@ -12,7 +13,7 @@ export default function PageNavbar({ className }) {
               href={link.linkTo}
               target={link.title === "Resume" ? "_blank" : undefined}
             >
-              <img src={link.icon.src} alt={link.title || "Home"} />
+              <Image src={link.icon} alt={link.title || "Home"} />
             </a>
           </li>
         ) : (
