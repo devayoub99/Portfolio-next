@@ -18,6 +18,7 @@ import nextJSImage from "@/assets/skills/NextJS.svg";
 import expressJSImage from "@/assets/skills/ExpressJS.svg";
 import mySQLImage from "@/assets/skills/MySQL.svg";
 import mongoDBImage from "@/assets/skills/MongoDB.svg";
+import figmaImage from "@/assets/skills/Figma.svg";
 
 import youtubeProjectImg from "@/assets/youtube.webp";
 import portfolioProjectImg from "@/assets/new.webp";
@@ -132,6 +133,58 @@ const skills = [
     language: "MongoDB",
     image: mongoDBImage,
   },
+  {
+    id: 15,
+    language: "Figma",
+    image: figmaImage,
+  },
+];
+
+const experience = [
+  {
+    id: 1,
+    organization: "Alhabbar Technologies",
+    jobTitle: "Sotware developer (React.js, Express.js and MySQL)",
+    duration: "Dec 2024 - Jun 2025",
+    achievements: [],
+  },
+  {
+    id: 2,
+    organization: "Nahrain foundation for relief and development",
+    jobTitle: "Sotware developer (MERN stack app contract)",
+    duration: "Sep 2024 - Nov 2024",
+    achievements: [
+      "Developed a comprehensive web application aimed at showcasing the organization's mission, programs, and latest activities.",
+      "Implemented features allowing the organization to publish articles, including multimedia content such as videos and images.",
+      "Ensured a user-friendly interface and responsive design to enhance accessibility across various devices.",
+    ],
+  },
+  {
+    id: 3,
+    organization: "Lykvyd AB (Sweden company)",
+    jobTitle: "Sotware developer (React.js, Express.js and MySQL)",
+    duration: "Mar 2024 - Sep 2024",
+    achievements: [
+      "Developed a responsive user interface using React and CSS modules (Scoped styles).",
+      "Integrated features like form validation, and file uploads (in Frontend and Backend)",
+      "Using Mobile-First approach to ensure responsive design across devices.",
+      "Creating Admin panel pages.",
+      "Customized plugins and added support for the Arabic language.",
+    ],
+  },
+  {
+    id: 4,
+    organization: "Nas Aliraq holding",
+    jobTitle: "Frontend developer (React.js)",
+    duration: "Jan 2024 - Mar 2024",
+    achievements: [
+      "Create About Us page.",
+      "Refactored code into reusable components for better maintainability.",
+      "Enhance 6 components.",
+      "Ensured responsiveness across all website pages.",
+      "Collaborated on enhancing pages accessibility and navigation.",
+    ],
+  },
 ];
 
 const projects = [
@@ -217,4 +270,4 @@ const socialMedia = [
   },
 ];
 
-export { links, skills, projects, socialMedia };
+export { links, skills, experience, projects, socialMedia };

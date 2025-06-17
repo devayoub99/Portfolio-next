@@ -24,3 +24,18 @@
 .bold-text {
   font-weight: bold;
 }
+
+.scroll-to-top {
+  position: fixed;
+  bottom: u.rem(20);
+  right: u.rem(10);
+  background-color: var(--gray-color);
+  padding: u.rem(8);
+  border-radius: 50%;
+  cursor: pointer;
+
+  img {
+    width: u.rem(20);
+    height: u.rem(18);
+  }
+}

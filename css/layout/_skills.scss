@@ -50,11 +50,13 @@
   .skill {
     @include u.flex(center, center);
     flex-direction: column;
-    // flex: u.rem(160) 1 1;
     row-gap: u.rem(5);
     user-select: none;
+    font-family: var(--font-DotGothic16), sans-serif;
+    letter-spacing: 1.5;
+
     .image {
-      width: 40px;
+      width: u.rem(40);
       opacity: 0.8;
       transition: var(--short-duration);
 
@@ -71,7 +73,7 @@
   }
 
   .progress {
-    padding-left: 3px;
+    padding-left: u.rem(3);
     li {
       display: inline-block;
       width: u.rem(18);

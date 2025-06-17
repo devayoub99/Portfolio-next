@@ -34,17 +34,14 @@
   }
 
   .project {
-    border-radius: u.rem(15);
     overflow: hidden;
-    background-color: #eee;
-    padding: u.rem(6);
+    box-shadow: 0 0 u.rem(10) var(--gray-color);
     position: relative;
     transition: var(--mid-duration);
+    border-radius: u.rem(16);
 
     &:hover {
       overflow: unset;
-      border-top-left-radius: unset;
-      border-top-right-radius: unset;
 
       .text {
         opacity: 1;
@@ -70,8 +67,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      background-color: #eee;
-      padding: u.rem(12);
+      padding: u.rem(6) u.rem(12);
       border-radius: u.rem(15) u.rem(15) 0 0;
       height: u.rem(40);
     }

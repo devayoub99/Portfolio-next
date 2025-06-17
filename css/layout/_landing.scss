@@ -65,7 +65,11 @@
 
   .image {
     animation: move-up-down 8s infinite;
-    width: u.rem(300);
+    width: u.rem(240);
+
+    @include u.breakpoint(medium) {
+      width: u.rem(300);
+    }
 
     @include u.breakpoint(large) {
       width: u.rem(400);

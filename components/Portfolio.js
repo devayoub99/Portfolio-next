@@ -5,6 +5,7 @@ import { motion as m } from "framer-motion";
 import { projects } from "@/utils/data";
 import Project from "./Project";
 import { fadeInHeadingVariants, fadeInVariants } from "@/utils/animations";
+import Experience from "./Experience";
 
 export default function Portfolio() {
   return (
@@ -26,6 +27,7 @@ export default function Portfolio() {
             Portfolio
           </m.span>
         </m.h2>
+        <Experience />
         <div className="projects">
           {projects.map((project, index) => (
             <Project
