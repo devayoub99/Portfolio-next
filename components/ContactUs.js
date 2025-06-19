@@ -41,7 +41,6 @@ export default function ContactUs() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData); // Here when we send the collected data to server
   };
 
   return (

@@ -44,9 +44,9 @@ const links = [
   },
   {
     id: 3,
-    title: "Portfolio",
+    title: "Experience",
     icon: portfolioIcon,
-    linkTo: "#portfolio",
+    linkTo: "#experience",
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ const links = [
     id: 5,
     title: "Resume",
     icon: resumeIcon,
-    linkTo: "/Ayoub_Jasim_Software_developer.pdf",
+    linkTo: "/Ayoub_Jasim_developer.pdf",
   },
 ];
 
@@ -144,15 +144,35 @@ const experience = [
   {
     id: 1,
     organization: "Alhabbar Technologies",
-    jobTitle: "Sotware developer (React.js, Express.js and MySQL)",
+    jobTitle: "Sotware developer (React.js, Express.js and MySQL with Prisma)",
     duration: "Dec 2024 - Jun 2025",
-    achievements: [],
+    liveAppURL: "https://www.ehsibly.com",
+    liveApps: [{ name: "Ehsibly", url: "https://www.ehsibly.com" }],
+    achievements: [
+      "Developed two main applications as part of the product team.",
+      "Focused on implementing responsive, user-friendly interfaces using a Mobile-First approach.",
+      "Ensured consistent UI and smooth functionality across different screen sizes and devices.",
+      "Independently handled UI decisions to maintain visual consistency and usability.",
+      "Participated in backend development by designing efficient database schemas and table structures.",
+      "Helped implement RESTful APIs to enable reliable data flow between the backend and frontend.",
+      "Worked closely with team members to optimize performance and maintain clean, scalable code.",
+      "Integrating apps with Third-party APIs",
+      "Contributed to DevOps responsibilities, including evaluating and selecting appropriate AWS services.",
+      "Collaborated with the team on AWS configuration to ensure all services were set up and functioning as expected.",
+    ],
   },
   {
     id: 2,
     organization: "Nahrain foundation for relief and development",
     jobTitle: "Sotware developer (MERN stack app contract)",
     duration: "Sep 2024 - Nov 2024",
+    liveAppURL: "https://www.nahrainrelief.com",
+    liveApps: [
+      {
+        name: "Nahrain Website",
+        url: "https://www.nahrainrelief.com",
+      },
+    ],
     achievements: [
       "Developed a comprehensive web application aimed at showcasing the organization's mission, programs, and latest activities.",
       "Implemented features allowing the organization to publish articles, including multimedia content such as videos and images.",
@@ -162,14 +182,17 @@ const experience = [
   {
     id: 3,
     organization: "Lykvyd AB (Sweden company)",
-    jobTitle: "Sotware developer (React.js, Express.js and MySQL)",
+    jobTitle: "Sotware developer (React.js, Express.js and MySQL with Prisma)",
     duration: "Mar 2024 - Sep 2024",
+    liveAppURL: "https://tayarati.com",
+    liveApps: [],
     achievements: [
       "Developed a responsive user interface using React and CSS modules (Scoped styles).",
       "Integrated features like form validation, and file uploads (in Frontend and Backend)",
       "Using Mobile-First approach to ensure responsive design across devices.",
       "Creating Admin panel pages.",
       "Customized plugins and added support for the Arabic language.",
+      "Integrating apps with Third-party APIs",
     ],
   },
   {
@@ -177,6 +200,12 @@ const experience = [
     organization: "Nas Aliraq holding",
     jobTitle: "Frontend developer (React.js)",
     duration: "Jan 2024 - Mar 2024",
+    liveApps: [
+      {
+        name: "GAU",
+        url: "https://gu.edu.iq/ar",
+      },
+    ],
     achievements: [
       "Create About Us page.",
       "Refactored code into reusable components for better maintainability.",

@@ -5,7 +5,7 @@
   .experience-list {
     display: flex;
     flex-direction: column;
-    gap: u.rem(30);
+    gap: u.rem(20);
   }
 
   .job-details {
@@ -14,12 +14,18 @@
     padding-left: 30px;
   }
 
+  .organization {
+    display: flex;
+    align-items: center;
+    gap: u.rem(10);
+  }
+
   .organization-name {
     position: relative;
     padding-left: 2px;
     font-size: 18px;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin: u.rem(10) 0;
 
     &::before {
       content: "";
@@ -64,7 +70,7 @@
   }
 
   .duration {
-    color: var(--dark-gray);
+    color: var(--gray-color);
     font-size: 12px;
   }
 
@@ -88,5 +94,23 @@
       background-color: #000;
       border-radius: 50%;
     }
+  }
+
+  .apps-container {
+    margin: u.rem(10) 0;
+    @include u.flex(flex-start, center);
+    gap: u.rem(10);
+  }
+
+  .live-apps {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .app {
+    background-color: var(--gray-color);
+    padding: u.rem(5) u.rem(10);
+    color: #fff;
+    border-radius: u.rem(5);
   }
 }

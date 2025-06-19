@@ -40,7 +40,9 @@ function Organization({ details }) {
       whileInView="visible"
       viewport={{ once: true }}
     >
-      <span className="organization-name">{details.organization}</span>
+      <div className="organization">
+        <span className="organization-name">{details.organization}</span>
+      </div>
       <span className="title-n-duration">
         <span className="job-title">{details.jobTitle}</span>
         <span className="duration">{details.duration}</span>
@@ -50,6 +52,25 @@ function Organization({ details }) {
           {achievement}
         </span>
       ))}
+
+      {details.liveApps.length ? (
+        <div className="apps-container">
+          <span className="live-apps">Live Apps: </span>
+          {details.liveApps.map((app) => {
+            return (
+              <a
+                key={app.url}
+                href={app.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="app"
+              >
+                {app.name}
+              </a>
+            );
+          })}
+        </div>
+      ) : null}
     </m.li>
   );
 }

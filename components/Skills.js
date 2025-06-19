@@ -52,7 +52,7 @@ export default function Skills() {
               <span className="bold-text">2021</span>, I've continuously grown
               and evolved—embracing new challenges and staying up-to-date with
               the latest technologies. I specialize in building modern,
-              cutting-edge web applications using tools like
+              cutting-edge web applications using tools like{" "}
               <span className="bold-text">
                 Next.js, React.js, Tailwind CSS, Express.js, and more
               </span>
@@ -77,12 +77,6 @@ export default function Skills() {
           viewport={{ once: true }}
         >
           {skills.map((skill, index) => (
-            // <Skill
-            //   key={skill.id}
-            //   {...skill}
-            //   variants={fadeInSkillVariants}
-            //   custom={index + 4}
-            // />
             <div key={skill.id} className="skill">
               <Image src={skill.image} alt={skill.language} className="image" />
               {skill.language}

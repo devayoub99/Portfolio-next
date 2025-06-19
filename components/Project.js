@@ -10,12 +10,22 @@ export default function Project(props) {
       variants={props.variants}
       custom={props.custom}
     >
-      <a href={props.liveUrl} target="_blank" className="image">
+      <a
+        href={props.liveUrl}
+        target="_blank"
+        className="image"
+        rel="noopener noreferrer"
+      >
         <Image src={props.imgUrl} alt={`Project ${props.id}`} />
       </a>
       <div className="text">
         <h3>
-          <a href={props.liveUrl} target="_blank" className="title">
+          <a
+            href={props.liveUrl}
+            target="_blank"
+            className="title"
+            rel="noopener noreferrer"
+          >
             {props.title}
           </a>
         </h3>

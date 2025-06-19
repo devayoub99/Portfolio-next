@@ -11,7 +11,7 @@ export default function Portfolio() {
   return (
     <m.section
       className="portfolio"
-      id="portfolio"
+      id="experience"
       initial="from"
       whileInView="to"
       viewport={{ once: true }}
@@ -24,7 +24,7 @@ export default function Portfolio() {
             variants={fadeInHeadingVariants}
             custom={1}
           >
-            Portfolio
+            Experience
           </m.span>
         </m.h2>
         <Experience />
